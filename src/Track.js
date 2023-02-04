@@ -5,12 +5,14 @@ import Nav from "./Components/Nav";
 import Banners from "./Components/Banners";
 import { Link } from "react-router-dom";
 
+import TrackBanner from "./track.jpg";
+
 function Track() {
   return (
     <div>
       <div>
         <Nav />
-        <Banners />
+        <Banners icon={TrackBanner} />
         <div className="overview">
           <div className="overviewOne">
             <div className="overviewButton">
