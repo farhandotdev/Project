@@ -10,7 +10,9 @@ function Home() {
         <nav>
           <img src={logo} alt="" />
           <div className="nav-middle">
-            <Link to="/">Home</Link>
+            <Link to="/" className="active">
+              Home
+            </Link>
             <Link to="/track">Track</Link>
             <Link to="/book">Book</Link>
             <Link to="/contact">Contact</Link>

@@ -17,6 +17,13 @@ nav {
 nav img {
   width: 10%;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+.active {
+  font-weight: bold;
+}
 
 .nav-right {
   flex: 1;
