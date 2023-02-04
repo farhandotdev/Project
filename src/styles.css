@@ -14,17 +14,14 @@ nav {
   align-items: center;
   padding-top: 0;
 }
-nav img {
-  width: 10%;
-}
-.bannerImg {
-  height: 200px;
-  width: 100%;
-}
 a {
   text-decoration: none;
   color: black;
 }
+nav img {
+  width: 10%;
+}
+
 .nav-right {
   flex: 1;
   display: flex;
@@ -269,4 +266,46 @@ h3 {
   color: white;
   background-color: black;
   border: none;
+}
+
+/* Login Page */
+
+.login {
+  padding: 50px;
+  width: 50%;
+  margin: auto;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login .logoSU {
+  overflow: visible;
+  width: 50px;
+  border: 1.5px solid black;
+  padding: 17px;
+  border-radius: 50%;
+}
+
+.credential p {
+  margin-bottom: 0px;
+  font-size: 10px;
+}
+
+.credential input {
+  padding: 10px 200px 10px 10px;
+  margin-bottom: 15px;
+}
+
+.logButton {
+  padding: 7px 20px;
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 15px;
+}
+
+#noAccount {
+  font-size: 10px;
 }

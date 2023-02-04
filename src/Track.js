@@ -5,141 +5,46 @@ import Nav from "./Components/Nav";
 import Banners from "./Components/Banners";
 import { Link } from "react-router-dom";
 
-import TrackBanner from "./track.jpg";
+import BookBanner from "./book.jpg";
 
 function Track() {
   return (
     <div>
       <div>
         <Nav />
-        <Banners icon={TrackBanner} />
+        <Banners icon={BookBanner} />
         <div className="overview">
-          <div className="overviewOne">
-            <div className="ship">
-              <div className="shipHeading">
-                <h3>SHIP YOUR ORDER</h3>
-              </div>
-              <form>
-                <fieldset>
-                  <legend>Sender's Details:</legend>
-                  <div className="shipForm">
-                    <input
-                      type="text"
-                      id="fname"
-                      placeholder="Full name:"
-                      name="fname"
-                    />
-                    <br />
-                    <br />
-                    <input
-                      type="text"
-                      id="contactNo"
-                      placeholder="Contact no:"
-                      name="lname"
-                    />
-                    <br />
-                    <br />
-                    <input
-                      type="email"
-                      id="email"
-                      placeholder="Email ID:"
-                      name="email"
-                    />
-                    <br />
-                    <br />
-                    <input
-                      type="email"
-                      id="address1"
-                      placeholder="Address Line 1:"
-                      name="email"
-                    />
-                    <br />
-                    <br />
-                    <input
-                      type="email"
-                      id="address2"
-                      placeholder="Address Line 2:"
-                      name="email"
-                    />
-                    <br />
-                    <br />
-                  </div>
-                </fieldset>
-              </form>
-              <form>
-                <fieldset>
-                  <legend>Receiver's Details:</legend>
-                  <div className="shipForm">
-                    <input
-                      type="text"
-                      id="fname"
-                      placeholder="Full name:"
-                      name="fname"
-                    />
-                    <br />
-                    <br />
-                    <input
-                      type="text"
-                      id="contactNo"
-                      placeholder="Contact no:"
-                      name="lname"
-                    />
-                    <br />
-                    <br />
-                    <input
-                      type="email"
-                      id="email"
-                      placeholder="Email ID:"
-                      name="email"
-                    />
-                    <br />
-                    <br />
-                    <input
-                      type="email"
-                      id="address1"
-                      placeholder="Address Line 1:"
-                      name="email"
-                    />
-                    <br />
-                    <br />
-                    <input
-                      type="email"
-                      id="address2"
-                      placeholder="Address Line 2:"
-                      name="email"
-                    />
-                    <br />
-                    <br />
-                    {/* <input type="submit" value="Submit"> */}
-                  </div>
-                </fieldset>
-              </form>
-              <form>
-                <fieldset>
-                  <legend>Consignment Details:</legend>
-                  <div className="shipForm">
-                    <input
-                      type="text"
-                      id="fname"
-                      placeholder="Actual Weight Of Consignment (in Kg)"
-                      name="fname"
-                    />
-                    <br />
-                    <br />
-                    <input
-                      type="text"
-                      id="contactNo"
-                      placeholder="Dimension Of Consignment ( LxBxH )"
-                      name="lname"
-                    />
-                    <br />
-                    <br />
-                    {/* <input type="submit" value="Submit"> */}
-                  </div>
-                </fieldset>
-              </form>
-              <button id="shipNow">Ship Now</button>
+          <div className="bookingCard">
+            <div className="bookHeading">
+              <h1>TRACK YOUR ORDER</h1>
             </div>
+            <div className="bookInput">
+              <div className="radio-group">
+                <input
+                  type="radio"
+                  id="mobile-number"
+                  name="identifier"
+                  defaultValue="mobile-number"
+                />
+                <label htmlFor="mobile-number">Mobile Number</label>
+                <input
+                  type="radio"
+                  id="tracking-id"
+                  name="identifier"
+                  defaultValue="tracking-id"
+                />
+                <label htmlFor="tracking-id">Tracking ID</label>
+                <input
+                  type="radio"
+                  id="order-id"
+                  name="identifier"
+                  defaultValue="order-id"
+                />
+                <label htmlFor="order-id">Order ID</label>
+              </div>
+            </div>
+            <input type="text" placeholder="Enter the option" id="trackingID" />
+            <button>Get OTP and Track</button>
           </div>
         </div>
       </div>
