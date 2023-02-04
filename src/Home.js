@@ -12,8 +12,8 @@ function Home() {
           <div className="nav-middle">
             <Link to="/">Home</Link>
             <Link to="/track">Track</Link>
-            <Link to="book">Book</Link>
-            <Link to="contact">Contact</Link>
+            <Link to="/book">Book</Link>
+            <Link to="/contact">Contact</Link>
           </div>
           <div className="nav-right">
             <button>Log In</button>
