@@ -5,7 +5,7 @@ import Nav from "./Components/Nav";
 import Banners from "./Components/Banners";
 import { Link } from "react-router-dom";
 
-import BookBanner from "./book.jpg";
+import BookBanner from "./3.png";
 
 function Track() {
   return (

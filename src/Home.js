@@ -9,7 +9,7 @@ import Footer from "./Components/Footer";
 import Nav from "./Components/Nav";
 import Banners from "./Components/Banners";
 
-import HomeBanner from "./delivery.jpg";
+import HomeBanner from "./1.png";
 
 function Home() {
   return (

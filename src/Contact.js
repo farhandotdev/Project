@@ -5,7 +5,7 @@ import Nav from "./Components/Nav";
 import Banners from "./Components/Banners";
 // import { Link } from "react-router-dom";
 
-import ContactBanner from "./contact.jpg";
+import ContactBanner from "./5.jpg";
 
 function Contact() {
   return (
