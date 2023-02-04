@@ -5,12 +5,14 @@ import Nav from "./Components/Nav";
 import Banners from "./Components/Banners";
 import { Link } from "react-router-dom";
 
+import BookBanner from "./book.jpg";
+
 function Book() {
   return (
     <div>
       <div>
         <Nav />
-        <Banners />
+        <Banners icon={BookBanner} />
         <div className="overview">
           <div className="overviewOne">
             <div className="overviewButton">

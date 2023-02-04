@@ -8,12 +8,15 @@ import road from "./road.png";
 import Footer from "./Components/Footer";
 import Nav from "./Components/Nav";
 import Banners from "./Components/Banners";
+
+import HomeBanner from "./delivery.jpg";
+
 function Home() {
   return (
     <div>
       <div>
         <Nav />
-        <Banners />
+        <Banners icon={HomeBanner} />
         <div className="overview">
           <div className="overviewOne">
             <div className="text">

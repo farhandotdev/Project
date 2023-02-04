@@ -1,11 +1,10 @@
 import React from "react";
-import Banners from "./delivery.jpg";
 
-function Banner() {
+function Banner(props) {
   return (
     <div>
       <div className="banner">
-        <img src={Banners} alt="" />
+        <img className="bannerImg" src={props.icon} alt="" />
       </div>
     </div>
   );
