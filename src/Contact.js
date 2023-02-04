@@ -1,35 +1,22 @@
 import React from "react";
 import "./styles.css";
-import logo from "./logo.png";
-
+import Footer from "./Components/Footer";
+import Nav from "./Components/Nav";
+import Banners from "./Components/Banners";
 import { Link } from "react-router-dom";
-import Banner from "./delivery.jpg";
+
 function Contact() {
   return (
     <div>
       <div>
-        <nav>
-          <img src={logo} alt="" />
-          <div className="nav-middle">
-            <Link to="/">Home</Link>
-            <Link to="/track">Track</Link>
-            <Link to="/book">Book</Link>
-            <Link to="/contact" className="active">
-              Contact
-            </Link>
-          </div>
-          <div className="nav-right">
-            <button>Log In</button>
-            <button>Sign Up</button>
-          </div>
-        </nav>
-        <div className="banner">
-          <img src={Banner} alt="" />
-        </div>
+        <Nav />
+        <Banners />
         <div className="overview">
           <div className="overviewOne">
             <div className="overviewButton">
-              <button>Track Your Order</button>
+              <Link to="/contact" className="link">
+                Contact
+              </Link>
             </div>
           </div>
           <div className="overviewOne">
@@ -39,6 +26,7 @@ function Contact() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

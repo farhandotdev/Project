@@ -1,30 +1,19 @@
 import React from "react";
 import "./styles.css";
-import logo from "./logo.png";
-import Banner from "./delivery.jpg";
 import { Link } from "react-router-dom";
+import air from "./air.png";
+import train from "./train.png";
+import road from "./road.png";
+
+import Footer from "./Components/Footer";
+import Nav from "./Components/Nav";
+import Banners from "./Components/Banners";
 function Home() {
   return (
     <div>
       <div>
-        <nav>
-          <img src={logo} alt="" />
-          <div className="nav-middle">
-            <Link to="/" className="active">
-              Home
-            </Link>
-            <Link to="/track">Track</Link>
-            <Link to="/book">Book</Link>
-            <Link to="/contact">Contact</Link>
-          </div>
-          <div className="nav-right">
-            <button>Log In</button>
-            <button>Sign Up</button>
-          </div>
-        </nav>
-        <div className="banner">
-          <img src={Banner} alt="" />
-        </div>
+        <Nav />
+        <Banners />
         <div className="overview">
           <div className="overviewOne">
             <div className="text">
@@ -35,12 +24,16 @@ function Home() {
               </ul>
             </div>
             <div className="overviewButton">
-              <button>Book a shipment</button>
+              <Link to="/book" className="link">
+                Book a shipment
+              </Link>
             </div>
           </div>
           <div className="overviewOne">
             <div className="overviewButton">
-              <button>Track a shipment</button>
+              <Link to="/track" className="link">
+                Track a shipment
+              </Link>
             </div>
             <div className="text">
               <h4>Track your shipment</h4>
@@ -76,6 +69,27 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <div className="transport">
+          <h1>Modes of Transport</h1>
+          <div className="modes">
+            <div className="mode">
+              <img src={air} alt="" />
+              <h4>BY AIR</h4>
+            </div>
+            <div className="mode">
+              <img src={road} alt="" />
+              <h4>BY ROAD</h4>
+            </div>
+            <div className="mode">
+              <img src={train} alt="" />
+              <h4>BY TRAIN</h4>
+            </div>
+          </div>
+          <p>WHICHEVER SUITS YOU</p>
+        </div>
+        <Footer />
       </div>
     </div>
   );
