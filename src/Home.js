@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.css";
 import logo from "./logo.png";
 import Banner from "./delivery.jpg";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <div>
@@ -9,10 +10,10 @@ function Home() {
         <nav>
           <img src={logo} alt="" />
           <div className="nav-middle">
-            <a>Home</a>
-            <a>Track</a>
-            <a>Book</a>
-            <a>Contact</a>
+            <Link to="/">Home</Link>
+            <Link to="/track">Track</Link>
+            <Link to="book">Book</Link>
+            <Link to="contact">Contact</Link>
           </div>
           <div className="nav-right">
             <button>Log In</button>
