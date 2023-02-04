@@ -5,12 +5,90 @@ html {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
+
+.active {
+  text-decoration: none;
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+
+.active:hover::after {
+  width: 100%;
+}
+.ships {
+  text-decoration: none;
+  position: relative;
+}
+
+.ships::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+
+.ships:hover::after {
+  width: 100%;
+}
+.tracks {
+  text-decoration: none;
+  position: relative;
+}
+
+.tracks::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+
+.tracks:hover::after {
+  width: 100%;
+}
+.contacts {
+  text-decoration: none;
+  position: relative;
+}
+
+.contacts::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+
+.contacts:hover::after {
+  width: 100%;
+}
+
 nav {
   display: flex;
-  justify-content: space-between;
-  padding: 25px;
+  justify-content: center;
+  padding: 10px;
   align-items: center;
   padding-top: 0;
 }
@@ -23,19 +101,64 @@ nav img {
 }
 
 .nav-right {
-  flex: 1;
+  flex: 3;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
 }
 
 .nav-middle {
   display: flex;
-  flex: 2;
+  flex: 3;
   justify-content: space-evenly;
 }
 
+.login {
+  padding: 20px 0;
+}
+
+.login1 {
+  width: 60px;
+  padding: 10px;
+  margin-right: 5px;
+  text-align: center;
+  transition: 500ms;
+  transition-delay: 0.1ms;
+}
+.login1:hover {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+.signup1 {
+  width: 60px;
+  padding: 10px;
+  margin-right: 5px;
+  text-align: center;
+  transition: 500ms;
+  transition-delay: 0.1ms;
+}
+.signup1:hover {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+.credential input {
+  width: 97%;
+  height: 20px;
+  padding: 10px;
+}
+
+.logButton {
+  margin-top: 10px;
+}
+
 .logo {
-  width: fit-content;
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 50px;
 }
 
 .banner {
@@ -43,9 +166,11 @@ nav img {
   justify-content: center;
 }
 
-.banner img {
-  width: 80%;
+.bannerImg {
+  width: 100%;
+  height: 350px;
   margin: auto;
+  object-fit: fill;
 }
 
 .overview {
@@ -286,16 +411,6 @@ h3 {
   border: 1.5px solid black;
   padding: 17px;
   border-radius: 50%;
-}
-
-.credential p {
-  margin-bottom: 0px;
-  font-size: 10px;
-}
-
-.credential input {
-  padding: 10px 200px 10px 10px;
-  margin-bottom: 15px;
 }
 
 .logButton {
