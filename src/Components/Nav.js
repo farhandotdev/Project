@@ -11,13 +11,13 @@ function Nav() {
           <Link to="/" className="active">
             Home
           </Link>
+          <Link to="/book">Ship</Link>
           <Link to="/track">Track</Link>
-          <Link to="/book">Book</Link>
           <Link to="/contact">Contact</Link>
         </div>
         <div className="nav-right">
-          <button>Log In</button>
-          <button>Sign Up</button>
+          <Link to="/login">Log In</Link>
+          <Link to="/signup">Sign Up</Link>
         </div>
       </nav>
     </div>
