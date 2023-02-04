@@ -1,39 +1,27 @@
 import React from "react";
 import "./styles.css";
-import logo from "./logo.png";
-
+import Footer from "./Components/Footer";
+import Nav from "./Components/Nav";
+import Banners from "./Components/Banners";
 import { Link } from "react-router-dom";
-import Banner from "./delivery.jpg";
+
 function Book() {
   return (
     <div>
       <div>
-        <nav>
-          <img src={logo} alt="" />
-          <div className="nav-middle">
-            <Link to="/">Home</Link>
-            <Link to="/track">Track</Link>
-            <Link to="/book" className="active">
-              Book
-            </Link>
-            <Link to="/contact">Contact</Link>
-          </div>
-          <div className="nav-right">
-            <button>Log In</button>
-            <button>Sign Up</button>
-          </div>
-        </nav>
-        <div className="banner">
-          <img src={Banner} alt="" />
-        </div>
+        <Nav />
+        <Banners />
         <div className="overview">
           <div className="overviewOne">
             <div className="overviewButton">
-              <button>Book Your Order</button>
+              <Link to="/book" className="link">
+                Book your order
+              </Link>
             </div>
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

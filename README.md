@@ -1,3 +1,3 @@
 # Project
-Pikcuppal Project
+PikcupPal Project
 Created with CodeSandbox
